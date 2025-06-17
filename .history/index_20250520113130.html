@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Iconscout Link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-hiking"></i> travel.com</a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="#home">home</a>
+            <a href="#category">Adventures</a>
+            <a href="#packages">packages</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div> 
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+    </header>
+
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" placeholder="Search here..." id="search-box" />
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/bgv2.mp4" type="video/mp4" />
+        </video>
+    </section>
+
+    <!-- Adventure section -->
+    <section class="category" id="category">
+        <h1 class="heading">Adventure Idea!</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/category-1.jpg" alt="Bungee Jumping" />
+                <h3>bungee jump</h3>
+                <p>Bungee jumping is an activity that involves a person jumping from a great height while connected to a large elastic cord.</p>
+                <a href="https://en.wikipedia.org/wiki/Bungee_jumping" class="btn" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/andman4.jpg" alt="Sky Diving" />
+                <h3>Sky Diving</h3>
+                <p>Jump from the skies and feel the thrill of freefall — an adrenaline-packed experience like no other!</p>
+                <a href="https://en.wikipedia.org/wiki/Zip_line" class="btn" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/goa8.jpg" alt="Diving" />
+                <h3> Scuba Diving</h3>
+                <p>Discover the magical underwater world filled with colorful reefs and marine life — a serene adventure beneath the waves.</p>
+                <a href="https://en.wikipedia.org/wiki/Canoeing" class="btn" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h1 class="heading">popular packages</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/manali1.1.png" alt="Manali 1"></div>
+                        <div class="swiper-slide"><img src="images/manali2.2.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/manali3.jpg" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/manali4.jpg" alt="Manali 1"></div>
+                        <div class="swiper-slide"><img src="images/manali2.webp" alt="Manali 2"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="content">
+                    <h3>Manali Package</h3>
+                    <p>Experience the beauty of snow-capped peaks, lush valleys, and adventure in Manali. Visit Solang Valley, Rohtang Pass, and enjoy activities like paragliding and river rafting. Perfect for nature lovers, couples, and thrill-seekers.</p>
+                    <div class="price">Rs 5,999 - Rs 8,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                    <a href="#contact" class="btn book-btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/goa1.jpg" alt="Manali 1"></div>
+                        <div class="swiper-slide"><img src="images/goa2.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/goa3.webp" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/goa4.webp" alt="Manali 1"></div>
+                        <div class="swiper-slide"><img src="images/goa5.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/goa6.jpg" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/goa7.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/goa8.jpg" alt="Manali 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="content">
+                    <h3>Goa Package</h3>
+                    <p>The most popular beach of Goa, Baga is located close to Calangute beach, around 30 Km North of Panaji. Baga is popular for its nightlife with some very famous clubs such as Brittos, Titos and Mambos. There is also a range of water sports that you can try your hands at.</p>
+                    <div class="price">Rs 7,999 - Rs 12,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                    <a href="#contact" class="btn book-btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/andman1.jpg" alt="andaman 1"></div>
+                        <div class="swiper-slide"><img src="images/andman2.jpg" alt="andaman2"></div>
+                        <div class="swiper-slide"><img src="images/andman3.jpg" alt="Ma 3"></div>
+                        <div class="swiper-slide"><img src="images/andman4.jpg" alt="Ma 2"></div>
+                        <div class="swiper-slide"><img src="images/andman5.jpg" alt="Ma3"></div>
+                        <div class="swiper-slide"><img src="images/andman6.webp" alt="Ma3"></div>
+                        <div class="swiper-slide"><img src="images/andman7.jpg" alt="Ma2"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="content">
+                    <h3>Andaman & Nicobar Package</h3>
+                    <p>Boasting cultural diversity and rich heritage, Delhi is home to several temples, tombs, gardens, forts, museums, markets and more. We take you to some of the best spots in the city. Pick the best packages from here and enjoy the tour of Delhi with guide.</p>
+                    <div class="price">Rs 12,999 - Rs 24,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                    <a href="#contact" class="btn book-btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/kutch1.png" alt="Manali 1"></div>
+                        <div class="swiper-slide"><img src="images/kutch2.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/kutch3.jpg" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/kutch4.avif" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/kutch5.jpg" alt="Manali 2"></div>
+                        <div class="swiper-slide"><img src="images/kutch6.avif" alt="Manali 3"></div>
+                        <div class="swiper-slide"><img src="images/kutch7.jpg" alt="Manali 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="content">
+                    <h3>Kutch Package</h3>
+                    <p>We organise Jaipur local sightseeing tour packages, pick up and drop from anywhere in Jaipur. This tour of Jaipur will give you the opportunity to see some of the most important landmarks and monuments in the city, such as the Hawa Mahal, City Palace, Amber Fort, and Jal Mahal. You can also visit the local markets and try the local cuisine.</p>
+                    <div class="price">Rs 4,999 - Rs 8,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                    <a href="#contact" class="btn book-btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1 class="heading">contact us</h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box" />
+                <input type="email" placeholder="email" class="box" />
+                <input type="number" placeholder="phone" class="box" />
+                <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn" />
+            </form>
+            <div class="image">
+                <img src="images/contact-img.svg" alt="contact" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Discover your perfect adventure with travel.com. From thrilling expeditions to tranquil escapes, we offer personalized packages to suit every traveler’s dream.</p>
+            </div>
+
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">france</a>
+                <a href="#">japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#category">adventure</a>
+                <a href="#packages">packages</a>
+                <a href="#contact">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+        </div>
+        <div class="credit">created by <span>Team Travel.com</span> | all rights reserved!</div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiperElements = document.querySelectorAll(".mySwiper");
+        swiperElements.forEach((swiperEl) => {
+            new Swiper(swiperEl, {
+                navigation: {
+                    nextEl: swiperEl.querySelector(".swiper-button-next"),
+                    prevEl: swiperEl.querySelector(".swiper-button-prev"),
+                },
+                pagination: {
+                    el: swiperEl.querySelector(".swiper-pagination"),
+                    clickable: true,
+                },
+                loop: true,
+            });
+        });
+
+        let menu = document.querySelector("#menu-btn");
+        let navbar = document.querySelector(".navbar");
+        let searchForm = document.querySelector(".search-form");
+        let searchBtn = document.querySelector("#search-btn");
+        let navClose = document.querySelector("#nav-close");
+        let closeSearch = document.querySelector("#close-search");
+
+        menu.onclick = () => {
+            navbar.classList.add("active");
+        };
+
+        navClose.onclick = () => {
+            navbar.classList.remove("active");
+        };
+
+        searchBtn.onclick = () => {
+            searchForm.classList.add("active");
+        };
+
+        closeSearch.onclick = () => {
+            searchForm.classList.remove("active");
+        };
+
+        window.onscroll = () => {
+            navbar.classList.remove("active");
+            searchForm.classList.remove("active");
+        };
+    </script>
+</body>
+</html>
