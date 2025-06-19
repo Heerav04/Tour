@@ -27,7 +27,7 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 ---
 ## 🌐 Live Demo
 
-👉 [Visit the site](https://diyaachunara.github.io/Tour/)  
+👉 [Visit the site](https://Heerav04.github.io/Tour/)  
 
 
 ---
@@ -36,4 +36,4 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 
 1️⃣ Clone this repository:
 ```bash
-git clone https://github.com/your-username/Tour.git
+git clone https://github.com/Heerav04/Tour.git
