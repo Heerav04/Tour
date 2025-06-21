@@ -21,13 +21,20 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+<<<<<<< HEAD
 - **SwiperJS** 
 - **Font Awesome** 
+=======
+- **SwiperJS** (image slider)
+- **Font Awesome** / **Iconscout** (icons)
+>>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
 
 ---
 ## 🌐 Live Demo
 
-👉 [Visit the site](https://diyaachunara.github.io/Tour)  
+=======
+👉 [Visit the site](https://Heerav04.github.io/Tour/)  
+>>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
 
 
 ---
@@ -36,5 +43,7 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 
 1️⃣ Clone this repository:
 ```bash
-git clone https://github.com/your-username/Tour.git
 
+=======
+git clone https://github.com/Heerav04/Tour.git
+>>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
