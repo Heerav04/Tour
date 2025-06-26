@@ -36,5 +36,5 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 
 1️⃣ Clone this repository:
 ```bash
-git clone https://github.com/your-username/Tour.git
+git clone https://github.com/diyaachunara/Tour.git
 
