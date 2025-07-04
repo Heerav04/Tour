@@ -27,14 +27,14 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 =======
 - **SwiperJS** (image slider)
 - **Font Awesome** / **Iconscout** (icons)
->>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
+
 
 ---
 ## 🌐 Live Demo
 
 =======
-👉 [Visit the site](https://Heerav04.github.io/Tour/)  
->>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
+👉 [Visit the site](https://diyaachunara.github.io/Tour/)  
+
 
 
 ---
@@ -46,8 +46,8 @@ This is a responsive **Tour & Travel booking website** that allows users to expl
 <<<<<<< HEAD
 =======
 git clone https://github.com/diyaachunara/Tour.git
->>>>>>> f522515b93f8efac82b06b3185512882a01ae458
+>>>>>>> 
 
 =======
 git clone https://github.com/Heerav04/Tour.git
->>>>>>> eaa94b7087c349262c4e3be975b35b4c119a096f
+>>>>>>> 
