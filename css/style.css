@@ -135,10 +135,6 @@ section {
 i {
   color: green;
 }
-
-/* Navbar Styles */
-
-/*-------------- NavBar updated------------- */
 .header .navbar a {
   color: #fff;
   font-size: 16px;
@@ -177,9 +173,6 @@ i {
 .header #menu-btn {
   display: none;
 }
-/* Search Form Styles */
-/* -------CSS updated------- */
-
 .search-form {
   position: fixed;
   top: 0;
@@ -278,24 +271,30 @@ form label:hover {
   color: green;
 }
 .home {
-  padding: 0;
-}
-.home .box {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: cover !important;
-  background-position: center !important;
-  justify-content: flex-end;
-  padding: 2rem 9%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.home .content {
-  width: 50rem;
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-.home .content span {
-  font-size: 4rem;
-  color: black;
+
+.home .box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 2rem;
 }
 .home .content h3 {
   font-size: 6rem;
