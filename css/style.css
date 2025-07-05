@@ -252,20 +252,20 @@ form {
 form input {
   width: 100%;
   font-size: 2rem;
-  color: white;
+  color: rgb(222, 199, 199);
   text-transform: none;
   background: none;
   padding-right: 2rem;
 }
 
 form input::placeholder {
-  color: #aaa;
+  color: #494e96;
 }
 
 form label {
   font-size: 3rem;
   cursor: pointer;
-  color: white;
+  color: rgb(18, 8, 8);
 }
 form label:hover {
   color: green;
