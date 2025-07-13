@@ -62,25 +62,68 @@ section {
   color: black;
   font-weight: bolder;
 }
-.wrapper1 {
-  margin-left: auto;
-  margin-right: auto;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  max-width: 550px;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+/* Reset margins so video touches screen edges */
+html, body{margin:0; height:100%;}
+
+/* ─── BOOK SECTION ─────────────────────────── */
+.book{
+  position:relative;
+  min-height:100vh;
+  width:100%;
+  overflow:hidden;          /* hide any video overflow */
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.wrapper1 .title1 h1 {
-  color: green;
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 3.5rem;
+/* Full‑screen looping video */
+.bg-video{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;        
+  z-index:-1;               
+}
+.wrapper1{
+  max-width:1000px;
+  width:100%;
+  border-radius:12px;
+  padding:30px 40px;
+  text-align:center;
+}
+.title1{
+  margin:0 0 25px;
+  color:#191930;
+  font-size:32px;
+  border: 3px solid #080808;
+  font-weight:700;
+}
+.book-now-form{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  justify-content:space-between;
 }
 
+.form-left,
+.form-right{
+  flex:1 1 45%;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.input{
+  padding:10px;
+  font-size:14px;
+  border:1px solid #a25b5b;
+  border-radius:5px;
+}
+@media (max-width:768px){
+  .book-now-form{flex-direction:column;}
+  .form-left, .form-right{flex:1 1 100%;}
+}
 .contact-form {
   display: flex;
 }
@@ -168,78 +211,11 @@ i {
 
 .header.icons a:hover,
 .header.icons div:hover {
-  color: green;
+  color: rgb(42, 69, 42);
 }
 .header #menu-btn {
   display: none;
 }
-.search-form {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s;
-}
-
-.search-form.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.search-form form {
-  width: 80%;
-  max-width: 500px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-}
-.search-form input[type="search"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-  margin-right: 10px;
-  color: #0056b3;
-}
-
-.search-form label {
-  color: #007BFF;
-  font-size: 20px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.search-form label:hover {
-  color: #0056b3;
-}
-
-.search-form #close-search {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.search-form #close-search:hover {
-  color: #ff6347;
-}
-
 
 form {
   width: 90vw;
@@ -330,7 +306,7 @@ form label:hover {
 .category .box-container .box h3 {
   font-size: 2rem;
   background: linear-gradient(to right, #2545fc,
-  #0de3eb, #100a2e, #eedd44);
+  #0de3eb, #100a2e, #c9c8be);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -416,69 +392,6 @@ form label:hover {
   color: #219150;
 }
 
-.footer {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.5))
-    ),
-    url(../images/footer-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/footer.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.footer .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-}
-
-.footer .box-container .box h3 {
-  font-size: 2rem;
-  padding: 1.5rem 0;
-  color: #fff;
-}
-
-.footer .box-container .box a {
-  display: block;
-  font-size: 1.4rem;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.footer .box-container .box a i {
-  color: #219150;
-  padding-right: 0.5rem;
-}
-
-.footer .box-container .box a:hover {
-  color: #219150;
-}
-
-.footer .box-container .box a:hover i {
-  padding-right: 2rem;
-}
-
-.footer .credit {
-  text-align: center;
-  margin-top: 2.5rem;
-  padding: 1rem;
-  padding-top: 2.5rem;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.footer .credit span {
-  color: #219150;
-}
-
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
@@ -556,12 +469,12 @@ form label:hover {
     margin-left: -20px;
   }
   form {
-    flex-direction: column;
+    flex-direction: row;
     width: 70vw;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   html {
     font-size: 50%;
   }
@@ -572,23 +485,23 @@ form label:hover {
     width: 70vw !important;
   }
   form {
-    width: 50vw;
+    width: 80vw;
   }
-  .wrapper1 {
-    padding: 10px;
+    .wrapper1 {
+    width: 95%;
+    padding: 20px;
   }
 }
 .swiper {
   width: 100%;
-  max-width: 600px;  /* Increased from 300px */
-  height: 200px;     /* Increased from 200px */
+  max-width: 700px;  /* Increased from 300px */
+  height: 300px;     /* Increased from 200px */
   margin: auto;
   margin-bottom: 1.5rem;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
-
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -596,52 +509,54 @@ form label:hover {
   border-radius: 12px;
 }
 .book-now-form {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #f0f8ff;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background: rgba(146, 185, 215, 0.3);
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-size: 12px; /* smaller text */
-  font-family: Arial, sans-serif;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 30px auto;
+  flex-wrap: wrap;
 }
 
-.book-now-form .input-fields {
+.book-now-form .form-left,
+.book-now-form .form-right {
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* vertical spacing between inputs */
+  gap: 15px;
 }
-
 .book-now-form .input {
-  width: 100%;
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 12px; /* smaller input text */
-  box-sizing: border-box;
+  border: 2px solid #111110;
+  font-size: 14px;
+  color: #060000;         
+  font-weight: bold;  
 }
-
-.book-now-form .btn1 {
-  margin-top: 20px;
-  text-align: center;
+.book-now-form button{
+  padding:10px 24px;
+  background:#0c1014;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:16px;
+  align-self: center;   
+  margin: 20px auto 0;  
 }
-
-.book-now-form button {
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px; /* button text slightly bigger */
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+.book-now-form .input::placeholder {
+  color: #111;           
+  font-weight: 600;     
+  opacity: 1;            
 }
-
 .book-now-form button:hover {
-  background-color: #005fa3;
+  background-color: #5c8eac;
+  align-self: center;
 }
+
 
 
 
